@@ -1,0 +1,339 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 conda activate FoP\
+(base) sharvan@MacBook-Air FoP % conda activate FoP\
+^C\
+CondaError: KeyboardInterrupt\
+\
+(base) sharvan@MacBook-Air FoP % /opt/anaconda3/envs/FoP/bin/python /U\
+sers/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week\
+_2/Higher_Lower.py\
+  File "/Users/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week_2/Higher_Lower.py", line 18\
+    print(f"you have tried the following numbers:" \{guess\} "to guess the secret number")\
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\
+SyntaxError: invalid syntax. Perhaps you forgot a comma?\
+(base) sharvan@MacBook-Air FoP % /opt/anaconda3/envs/FoP/bin/python /U\
+sers/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week\
+_2/Higher_Lower.py\
+Welcome to Higher & Lower , a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses !\
+Choose the guessing range starting from 1 to : \
+10\
+Traceback (most recent call last):\
+  File "/Users/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week_2/Higher_Lower.py", line 14, in <module>\
+    if guess[counter] != secret_number:\
+       ~~~~~^^^^^^^^^\
+IndexError: list index out of range\
+(base) sharvan@MacBook-Air FoP % /opt/anaconda3/envs/FoP/bin/python /U\
+sers/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week\
+_2/Higher_Lower.py\
+Welcome to Higher & Lower , a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses !\
+Choose the guessing range starting from 1 to : 10\
+\
+Traceback (most recent call last):\
+  File "/Users/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week_2/Higher_Lower.py", line 15, in <module>\
+    if guess[counter] != secret_number:\
+       ~~~~~^^^^^^^^^\
+IndexError: list index out of range\
+(base) sharvan@MacBook-Air FoP % /opt/anaconda3/envs/FoP/bin/python /U\
+sers/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week\
+_2/Higher_Lower.py\
+Welcome to Higher & Lower , a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses !\
+Choose the guessing range starting from 1 to : 99\
+\
+Traceback (most recent call last):\
+  File "/Users/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week_2/Higher_Lower.py", line 15, in <module>\
+    if guess[counter]0!= secret_number:\
+       ~~~~~^^^^^^^^^\
+IndexError: list index out of range\
+(base) sharvan@MacBook-Air FoP % /opt/anaconda3/envs/FoP/bin/python /U\
+sers/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week\
+_2/Higher_Lower.py\
+Welcome to Higher & Lower , a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 19\
+\
+Guess a number between 1 and 19: 5\
+5 is incorrect, the number is higher.\
+Guess a number between 1 and 19: 9\
+9 is incorrect, the number is lower\
+Guess a number between 1 and 19: 8\
+8 is incorrect, the number is lower\
+Guess a number between 1 and 19: 8\
+8 is incorrect, the number is lower\
+Guess a number between 1 and 19: 7\
+7 is incorrect, the number is lower\
+kip\
+(base) sharvan@MacBook-Air FoP % python higher_lower.py\
+python: can't open file '/Users/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/higher_lower.py': [Errno 2] No such file or directory\
+(base) sharvan@MacBook-Air FoP % cd week_2\
+(base) sharvan@MacBook-Air week_2 % cd week_2\
+cd: no such file or directory: week_2\
+(base) sharvan@MacBook-Air week_2 % python higher_lower.py\
+Welcome to Higher & Lower1, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 99\
+\
+Guess a number between 1 and 99: 5\
+5 is incorrect, the number is higher.\
+Guess a number between 1 and 99: 6\
+6 is incorrect, the number is higher.\
+Guess a number between 1 and 99: 7\
+7 is incorrect, the number is higher.\
+Guess a number between 1 and 99: 8\
+8 is incorrect, the number is higher.\
+Guess a number between 1 and 99: 9\
+9 is incorrect, the number is higher.\
+You have tried the following numbers: 5 6 7 8 9 to guess the secret number 61!\
+You lost :(\
+(base) sharvan@MacBook-Air week_2 % /opt/anaconda3/envs/FoP/bin/python /Users/sha\
+rvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Higher_Lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 999\
+\
+Guess a number between 1 and 999: ^Z\
+zsh: suspended  /opt/anaconda3/envs/FoP/bin/python \
+(base) sharvan@MacBook-Air week_2 % python higher_lower.py\
+Welcome to Higher & Lower1, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 999\
+\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 99\
+99 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 999\
+999 is incorrect, the number is lower\
+Guess a number between 1 and 999: 0\
+0 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+You have tried the following numbers: 9 99 999 0 9 to guess the secret number 725!\
+You lost :(\
+(base) sharvan@MacBook-Air week_2 % /opt/anaconda3/envs/FoP/bin/python /Users/sharvan/Library/CloudStorage/O\
+neDrive-UniversiteitLeiden/FoP/Higher_Lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 999\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+You have tried the following numbers: 9 9 9 9 9 to guess the secret number 113!\
+You lost :(\
+Do you want to play again? (y/n)y \
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 99\
+99 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 999: 9\
+9 is incorrect, the number is higher.\
+You have tried the following numbers: 9 9 99 9 9 to guess the secret number 155!\
+You lost :(\
+Do you want to play again? (y/n)n\
+Traceback (most recent call last):\
+  File "/Users/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Higher_Lower_extra.py", line 54, in <module>\
+    print(f"You played \{played_rounds\} rounds, where you received \{obtained_score/max_score\} points")\
+                                                                   ~~~~~~~~~~~~~~^~~~~~~~~~\
+TypeError: unsupported operand type(s) for /: 'builtin_function_or_method' and 'int'\
+(base) sharvan@MacBook-Air week_2 % /opt/anaconda3/envs/FoP/bin/python /Users/sharvan/Library/CloudStorage/O\
+neDrive-UniversiteitLeiden/FoP/Higher_Lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 99999\
+Guess a number between 1 and 99999: 9\
+9 is incorrect, the number is higher.\
+Guess a number between 1 and 99999: 99\
+99 is incorrect, the number is higher.\
+Guess a number between 1 and 99999: 999\
+999 is incorrect, the number is higher.\
+Guess a number between 1 and 99999: 9999\
+9999 is incorrect, the number is higher.\
+Guess a number between 1 and 99999: 9\
+9 is incorrect, the number is higher.\
+You have tried the following numbers: 9 99 999 9999 9 to guess the secret number 67120!\
+You lost :(\
+Do you want to play again? (y/n)n\
+You played 1 rounds, where you received 0.0 points\
+You scored per round: [0]\
+(base) sharvan@MacBook-Air week_2 % /opt/anaconda3/envs/FoP/bin/python /Users/sharvan/Library/CloudStorage/O\
+neDrive-UniversiteitLeiden/FoP/Higher_Lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 4\
+Guess a number between 1 and 4: 3\
+3 is incorrect, the number is higher.\
+Guess a number between 1 and 4: 4\
+You have tried the following numbers: 3 4 to guess the secret number 4!\
+You won and are awarded 8 points\
+You have tried the following numbers: 3 4 to guess the secret number 4!\
+You lost :(\
+Do you want to play again? (y/n)n\
+You played 1 rounds, where you received 0.8 points\
+You scored per round: [8, 0]\
+(base) sharvan@MacBook-Air week_2 % /opt/anaconda3/envs/FoP/bin/python /Users/sharvan/Library/CloudStorage/O\
+neDrive-UniversiteitLeiden/FoP/Higher_Lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 4\
+Guess a number between 1 and 4: 3\
+You have tried the following numbers: 3 to guess the secret number 3!\
+You won and are awarded 10 points\
+You have tried the following numbers: 3 to guess the secret number 3!\
+You lost :(\
+Do you want to play again? (y/n)y\
+Guess a number between 1 and 4: 3\
+3 is incorrect, the number is lower.\
+Guess a number between 1 and 4: 2 \
+2 is incorrect, the number is lower.\
+Guess a number between 1 and 4: 1\
+You have tried the following numbers: 3 2 1 to guess the secret number 1!\
+You won and are awarded 5 points\
+You have tried the following numbers: 3 2 1 to guess the secret number 1!\
+You lost :(\
+Do you want to play again? (y/n)n\
+You played 2 rounds, where you received 15/20 points\
+You scored per round: [10, 0, 5, 0]\
+(base) sharvan@MacBook-Air week_2 % /opt/anaconda3/envs/FoP/bin/python /Users/sharvan/Library/CloudStorage/O\
+neDrive-UniversiteitLeiden/FoP/Higher_Lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 4\
+Guess a number between 1 and 4: 3\
+3 is incorrect, the number is higher.\
+Guess a number between 1 and 4: 4\
+You have tried the following numbers: 3 4 to guess the secret number 4!\
+You won and are awarded 8 points\
+You have tried the following numbers: 3 4 to guess the secret number 4!\
+You lost :(\
+Do you want to play again? (y/n)n \
+You played 1 rounds, where you received 8/10 points\
+You scored per round: [8, 0]\
+(base) sharvan@MacBook-Air week_2 % /opt/anaconda3/envs/FoP/bin/python /Users/sharvan/Library/CloudStorage/O\
+neDrive-UniversiteitLeiden/FoP/Higher_Lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 2\
+Guess a number between 1 and 2: 2\
+You have tried the following numbers: 2 to guess the secret number 2!\
+You won and are awarded 10 points\
+You have tried the following numbers: 2 to guess the secret number 2!\
+You lost :(\
+Do you want to play again? (y/n)n\
+You played 1 rounds, where you received 10/10 points\
+You scored per round: [10, 0]\
+(base) sharvan@MacBook-Air week_2 % python higher_lower_extra.py\
+python: can't open file '/Users/sharvan/Library/CloudStorage/OneDrive-UniversiteitLeiden/FoP/Week_2/higher_lower_extra.py': [Errno 2] No such file or directory\
+(base) sharvan@MacBook-Air week_2 % python higher_lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 2\
+Guess a number between 1 and 2: 2\
+You have tried the following numbers: 2 to guess the secret number 2!\
+You won and are awarded 10 points\
+You have tried the following numbers: 2 to guess the secret number 2!\
+You lost :(\
+Do you want to play again? (y/n)n\
+You played 1 rounds, where you received 10/10 points\
+You scored per round: [10, 0]\
+(base) sharvan@MacBook-Air week_2 % python higher_lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 2\
+Guess a number between 1 and 2: 0\
+0 is incorrect, the number is higher.\
+Guess a number between 1 and 2: 2\
+You have tried the following numbers: 0 2 to guess the secret number 2!\
+You won and are awarded 8 points\
+Do you want to play again? (y/n)y\
+Guess a number between 1 and 2: 2   \
+2 is incorrect, the number is lower.\
+Guess a number between 1 and 2: 1\
+You have tried the following numbers: 2 1 to guess the secret number 1!\
+You won and are awarded 8 points\
+Do you want to play again? (y/n)n\
+You played 2 rounds, where you received 16/20 points\
+You scored per round: [8, 8]\
+(base) sharvan@MacBook-Air week_2 % python higher_lower_extra.py \
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as\
+a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 10\
+Guess a number between 1 and 10: 5\
+\
+5 is incorrect, the number is lower.\
+Guess a number between 1 and 10: 3\
+\
+3 is incorrect, the number is lower.\
+Guess a number between 1 and 10: 2\
+\
+2 is incorrect, the number is lower.\
+Guess a number between 1 and 10: 1\
+\
+You have tried to following numbers: \
+5 3 2 1 to guess the secret number 1!\
+You won and are awarded 2 points!\
+Do you want to play again? (y/n) y\
+Guess a number between 1 and 10: 100\
+\
+100 is incorrect, the number is lower.\
+Guess a number between 1 and 10: 7\
+\
+7 is incorrect, the number is lower.\
+Guess a number between 1 and 10: 3\
+\
+3 is incorrect, the number is higher.\
+Guess a number between 1 and 10: 5\
+\
+You have tried to following numbers: \
+100 7 3 5 to guess the secret number 5!\
+You won and are awarded 2 points!\
+Do you want to play again? (y/n) n\
+You played 2 rounds, where you recieved 4/20 points\
+You scored per round: [2, 2]\
+(base) sharvan@MacBook-Air week_2 % \
+(base) sharvan@MacBook-Air week_2 % python higher_lower_extra.py\
+Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.\
+When you forgot your previous attempts you can guess -1 which does not count as\
+a guess but will print your previous guesses!\
+Choose the guessing range starting from 1 to : 1000\
+Guess a number between 1 and 1000: 500\
+\
+500 is incorrect, the number is lower.\
+Guess a number between 1 and 1000: 300\
+\
+300 is incorrect, the number is higher.\
+Guess a number between 1 and 1000: 407\
+\
+407 is incorrect, the number is lower.\
+Guess a number between 1 and 1000: 350\
+\
+350 is incorrect, the number is higher.\
+Guess a number between 1 and 1000: 370\
+\
+370 is incorrect, the number is lower.\
+You have tried to following numbers: \
+500 300 407 350 370 to guess the secret number 364!\
+You lost :(\
+Do you want to play again? (y/n) n\
+You played 1 rounds, where you recieved 0/10 points\
+You scored per round: [0]\
+(base) sharvan@MacBook-Air week_2 % }

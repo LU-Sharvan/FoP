@@ -1,0 +1,3 @@
+var value is number
+value -> 9
+print(value)
