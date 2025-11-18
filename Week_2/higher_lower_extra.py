@@ -33,15 +33,21 @@ while True:
 
         # History check
         if guess == -1:
-            print(f"your previous guess(es) are: {"".join(str(x) for x in guesses)}")
+            """print(f"your previous guess(es) are: {"".join(str(x) for x in guesses)}")"""
+            print(f"your previous gues(ses) are: {guesses}")
             continue
 
-        guesses.append(guess)  # Add guess to list of attempts
+        guesses.append(((counter+1),guess))  # Add guess to list of attempts
 
         # Win check
         if guess == secret_number:
-            print("You have tried to following numbers: ")
-            print(f"{" ".join(str(x) for x in guesses)} to guess the secret number {secret_number}!")
+            print("You have tried to following numbers: ", end = "")
+            """print(f"{" ".join(str(x) for x in guesses)} to guess the secret number {secret_number}!")"""
+            
+            for attempt, number in guesses:
+                print(number, end=" ")
+            print(f"to guess the secret number {secret_number}")
+            
             print(f"You won and are awarded {points_table[counter]} points!")
             scores_per_round.append(points_table[counter])
             is_won = True
@@ -55,8 +61,13 @@ while True:
 
     # Lost screen
     if not is_won:
-        print("You have tried to following numbers: ")
-        print(f"{" ".join(str(x) for x in guesses)} to guess the secret number {secret_number}!")
+        print("You have tried to following numbers: ", end = "")
+        """print(f"{" ".join(str(x) for x in guesses)} to guess the secret number {secret_number}!")"""
+        
+        for attempt, number in guesses:
+            print(number, end=" ")
+        print(f"to guess the secret number {secret_number}")
+       
         print("You lost :(")
         scores_per_round.append(0)
 

@@ -12,7 +12,7 @@ print("Welcome to Higher & Lower, a game where you have 5 attempts to guess the 
 print("When you forgot your previous attempts you can guess -1 which does not count as")
 print("a guess but will print your previous guesses!")
 
-# Game setuo
+# Game setup
 max_number = int(input("Choose the guessing range starting from 1 to : "))
 print()
 secret_number = random.randint(1, max_number)  # Generates secret number in range 1 to max_number

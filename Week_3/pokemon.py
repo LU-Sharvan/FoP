@@ -97,8 +97,8 @@ if __name__ == "__main__":
     print("Framework Pokemon Game:")
 
     # Data structures
-    pokemon_mapping = {}
-    trainer_mapping = {}
+    pokemon_mapping = {}  # Pokemon ID : Pokemon("Name", level)
+    trainer_mapping = {}  # Trainer ID : Trainer("Name", pokemons)
     unique_moves = set()
 
     # Adding Pokemon
