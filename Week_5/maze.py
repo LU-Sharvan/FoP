@@ -51,6 +51,8 @@ def find_route(maze, end):
 
 # Helper functions
 
+# Recursive function uses Python's call stack as tree, branches end in None -> switching
+
 def find_route_rec(maze, start, end):  # Children become new starting positions
 
     # Base Case: starting at the end
@@ -59,7 +61,7 @@ def find_route_rec(maze, start, end):  # Children become new starting positions
 
     # Base Case: current starting point in the loop or end point isn't present in the maze
     if start not in maze.transitions or end not in maze.transitions:
-        return None
+        return None  # Returns back to subroute -> if condition is false -> next for-loop/branch iteration gets started
 
     # Recursive function: every child of the current position will be evaluated
     for child in maze.transitions[start]:  # Starts with children of start
@@ -71,6 +73,8 @@ def find_route_rec(maze, start, end):  # Children become new starting positions
 
     return None  # If a child has an empty list (dead end), the for loop will be skipped and return None
 
+
+# Iterative function creates its own call stack to act like a tree, branches end in continue -> switching
 
 def find_route_iter(maze, start, end):  # Children become new starting positions
     stack = [(start, [start])]  # Starting point of each loop iteration, and that point as a list for later use
@@ -84,14 +88,13 @@ def find_route_iter(maze, start, end):  # Children become new starting positions
 
         # Base Case: current starting point in the loop or end point isn't present in the maze
         if start not in maze.transitions or end not in maze.transitions:
-            continue  # Continue with next path in stack
+            continue  # Current branch in stack won't have it's children evaluated, and was already destroyed by pop
 
         # Iteration: every dictionary value is a child whose children will also be examind till you've reached the end
         for child in maze.transitions[current]:
             stack.append((child, path + [child]))
 
     return None
-
 
 if __name__ == "__main__":
     # Script code here
