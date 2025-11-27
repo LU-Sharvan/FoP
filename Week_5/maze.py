@@ -51,7 +51,7 @@ def find_route(maze, end):
 
 # Helper functions
 
-# Recursive function uses Python's call stack to navigate tree, branches end in None -> switching
+# Depth First Search uses Python's call stack to navigate tree, branches end in None -> switching
 
 def find_route_rec(maze, start, end):  # Children become new starting positions
 
@@ -74,7 +74,7 @@ def find_route_rec(maze, start, end):  # Children become new starting positions
     return None  # If a child has an empty list (dead end), the for loop will be skipped and return None
 
 
-# Iterative function creates its own call stack to act like (all) tree branches, branches end in continue -> replaced
+# Breath First Search creates its own call stack to act like (all) tree branches, branches end in continue -> replaced
 
 def find_route_iter(maze, start, end):  # Children become new starting positions
     stack = [(start, [start])]  # Starting point of each loop iteration, and that point as a list; max length is 2
