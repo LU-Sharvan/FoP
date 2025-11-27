@@ -113,8 +113,8 @@ if __name__ == "__main__":
     start = (0, 0)
     end = (5, 2)
     maze = Maze(start, transitions)
-    route = find_route(maze, end)
+    solution = find_route(maze, end)
 
     # Returning solution to user
-    print(route)
-    maze.show(route)
+    print(solution)
+    maze.show(solution)
