@@ -48,11 +48,11 @@ def add_trainer(trainer_mapping, trainer_name, trainer_ID, pokemon_mapping, poke
 
     # Prints Error if pokemon ID doesn't exist, otherwise it adds it to the list of owned Pokemon
     pokemons = []
-    for ID in pokemons_ID:
-        if ID not in pokemon_mapping:
+    for _id in pokemons_ID:
+        if _id not in pokemon_mapping:
             print("Error ID 5 not found!")
             return pokemons
-        pokemons.append(pokemon_mapping[ID])
+        pokemons.append(pokemon_mapping[_id])
 
     trainer_mapping[trainer_ID] = Trainer(trainer_name, pokemons)  # Store var of type Trainer in trainer_mapping
     return trainer_mapping
@@ -65,10 +65,10 @@ def strongest_pokemon(pokemon_mapping):
         return None
 
     # Loops through each ID and assings the Pokemon with the highest level to highest_level and strongest_pokemon
-    for ID in pokemon_mapping:
-        if pokemon_mapping[ID].level > highest_level:
-            highest_level = pokemon_mapping[ID].level
-            strongest_pokemon = ID
+    for _id in pokemon_mapping:
+        if pokemon_mapping[_id].level > highest_level:
+            highest_level = pokemon_mapping[_id].level
+            strongest_pokemon = _id
     return pokemon_mapping[strongest_pokemon]
 
 def battle(trainer_1, trainer_2):
@@ -79,10 +79,10 @@ def battle(trainer_1, trainer_2):
     for t1_pokemon, t2_pokemon in zip(trainer_1.pokemons, trainer_2.pokemons):  # Matches based on tuples made by zip
         if t1_pokemon.level > t2_pokemon.level:
             t1_points += 1
-        elif t1_pokemon.level < t2_pokemon.level:
-            t2_points += 1
         else:
             t2_points += 1
+    """elif t1_pokemon.level < t2_pokemon.level:
+            t2_points += 1"""
 
     # Determining the winner based on obtained points
     if t1_points > t2_points:
@@ -113,7 +113,7 @@ if __name__ == "__main__":
     add_move(pokemon_mapping, unique_moves, 998, "Glaive Rush")
 
     # Adding trainers
-    add_trainer(trainer_mapping, "Ash", 5, pokemon_mapping, [158])
+    add_trainer(trainer_mapping, "Ash", 5, pokemon_mapping, [158, 998])
     add_trainer(trainer_mapping, "Gladeon", 101, pokemon_mapping, [998])
 
     # Printing list of all unique moves and strongest Pokemon
