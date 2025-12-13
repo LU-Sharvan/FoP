@@ -71,7 +71,7 @@ def find_route_rec(maze, start, end):  # Children become new starting positions
         if subroute is not None:  # Subroute is the child of start, and is the endpoint, in the top layer
             return [start] + subroute  # Then subroute becomes both for start in the layer beneath
 
-    return None  # If a child has an empty list (dead end), the for loop will be skipped and return None
+    return None  # If a child has an empty list (dead end), the for loop will be skipped and return None (unneccessary)
 
 
 # Breath First Search creates its own call stack to act like (all) tree branches, branches end in continue -> replaced

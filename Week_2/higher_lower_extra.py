@@ -1,11 +1,12 @@
-"""
-File: higher_lower_extra.py
-Author: Sharvan Gangadin
-Description: Higher & Lower game: multiple rounds of guesssing the secret number in 5 attempts
-License: LU license
-"""
-
 import random  # Import random to generate secret number
+from gtts import gTTS
+import os
+import time
+import sys
+import termios
+
+def flush_input():
+    termios.tcflush(sys.stdin, termios.TCIFLUSH)
 
 # Game introduction
 print("Welcome to Higher & Lower, a game where you have 5 attempts to guess the correct number.")
@@ -13,6 +14,7 @@ print("When you forgot your previous attempts you can guess -1 which does not co
 print("a guess but will print your previous guesses!")
 
 # Game setup
+flush_input()
 max_number = int(input("Choose the guessing range starting from 1 to : "))
 played_rounds = 0  # Number of played rounds
 scores_per_round = []  # Scores of each round
@@ -28,6 +30,7 @@ while True:
 
     # Question loop
     while counter < attempts:
+        flush_input()
         guess = int(input(f"Guess a number between 1 and {max_number}: "))
         print()
 
@@ -74,6 +77,7 @@ while True:
     played_rounds += 1  # Tracks amount of played rounds
 
     # Asks user for another round
+    flush_input()
     new_round = input("Do you want to play again? (y/n) ")
     if new_round.strip().lower() not in ("y", "yes"):  # If input is not yes, the game loop breaks
         break
