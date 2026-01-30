@@ -295,11 +295,6 @@ class ImageProcessor():
         else:
             plt.show()
 
-    def RGB2(self):
-
-        imgplot = plt.imshow(, cmap="gray")
-
-
 if __name__ == "__main__":
     img = ImageProcessor()
     img.load("pumpkin.png")
